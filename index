@@ -22,6 +22,9 @@
     
 </nav>
 </header>
+<form action="">
+    <input type="search" name="Productos" placeholder="Search">
+</form>
 <br>
  
 <main>
