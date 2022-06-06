@@ -1,0 +1,54 @@
+body{
+    background-image: url(../Imagenes/Background_1si.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*height: 100vh;*/
+}
+
+header{
+    display: flex;
+    height: 6rem;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px;
+}
+
+h2{
+    margin:10px;
+    
+}
+.img-lupa{
+    background-image: url(/Imagenes/lupa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border: none;
+}
+.img-productos{
+    width: 20%;
+    margin: 20px;
+    max-width: 200px ;
+}
+
+.stroke {
+    margin-left: 20%  ;
+    color: rgb(190, 51, 245);
+    -webkit-text-stroke:3px black;
+    font-family: impact;
+    font-size: 40px;
+    letter-spacing: 0;
+    
+}
+table {
+    /*border: solid 1px rgb(156, 45, 130);*/
+    text-align: center;
+ 
+}
+ 
+    
+td {
+    border: solid 1px rgb(141, 75, 125) ;
+    width: 360px;
+    height: 360px;
+         
+}
