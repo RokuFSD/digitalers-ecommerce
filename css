@@ -1,4 +1,70 @@
-body{
+@import url('https://css.gg/search.css');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Search icon */
+.gg-search {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    width: 12px;
+    height: 12px;
+    border: 1.5px solid;
+    border-radius: 100%;
+    margin-left: -4px;
+    margin-top: -4px
+}
+
+.gg-search::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 1px;
+    height: 6px;
+    background: currentColor;
+    transform: rotate(-45deg);
+    top: 8px;
+    left: 9px
+}
+
+/*Input */
+.input-group {
+    width: 15rem;
+    height: 1.75rem;
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    outline: 2px solid #000;
+    border-radius: .25rem;
+    overflow: hidden;
+}
+
+.icon__holder {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 0;
+    background: #D6B9FF;
+    border-left: 2px solid #000;
+}
+
+.input-group__icon {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+body {
     background-image: url(../Imagenes/Background_1si.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -6,67 +72,52 @@ body{
     /*height: 100vh;*/
 }
 
-header{
+header {
     display: flex;
     height: 6rem;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 10px;
 }
 
-h2{
-    margin:10px;
-    
-}
-.img-lupa{
-    background-image: url(/Imagenes/lupa.png);
-    background-position: right center;
-    background-repeat: no-repeat;
-    border: none;
-}
-.img-productos{
-    width: 20%;
-    margin: 20px;
-    max-width: 200px ;
+h2 {
+    margin: 10px;
 }
 
 .stroke {
-    margin-left: 20%  ;
+    margin-left: 20%;
     color: rgb(190, 51, 245);
-    -webkit-text-stroke:3px black;
+    -webkit-text-stroke: 3px black;
     font-family: impact;
     font-size: 40px;
     letter-spacing: 0;
-    
+
 }
+
 table {
     /*border: solid 1px rgb(156, 45, 130);*/
     text-align: center;
- 
+
 }
- 
-    
+
 td {
-    border: solid 1px rgb(141, 75, 125) ;
+    border: solid 1px rgb(141, 75, 125);
     width: 360px;
     height: 360px;
-         
 }
-input[type="search"]{
-    width: 45px; /*ancho por defecto*/
-    background: #ededed url("C:/Users/CELL PLAYER/Desktop/Kurosaki_Gaming/Imagenes/lupa.png") no-repeat 9px center; /*icono lupa*/
-    padding: 9px 10px 9px 32px;
-    border-radius: 15em;
-    -webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
-    -moz-transition: all .5s; /* transición de .5seg a todos los elementos para mozilla*/
-    -o-transition: all .5s; /* transición de .5seg a todos los elementos para ophera*/
-    transition: all .5s; /* transición de .5seg a todos los elementos*/
+
+input[type="search"] {
+    width: 100%;
+    height: 100%;
+    padding: 10px 12px;
+    transition: all .4s; /* transición de .5seg a todos los elementos*/
+    -webkit-transition: all .4s; /* transición de .5seg a todos los elementos para chrome*/
+    -moz-transition: all .4s; /* transición de .5seg a todos los elementos para mozilla*/
+    -o-transition: all .4s; /* transición de .5seg a todos los elementos para ophera*/
     outline: none; /* ocultar el fucos automático de los input */
+    border: none;
 }
-input[type="search"]:focus{
-    width: 130px; /*tamaño del boton buscar al hacer click*/
-    padding-left: 32px; /*espacio entre el icono lupa y el placeholder*/
-    color: #000;
-    background-color: rgb(224, 154, 201);
-    
+
+input[type="search"]:focus {
+    background: #FDEFFE;
 }
