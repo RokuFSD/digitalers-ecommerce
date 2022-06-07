@@ -23,7 +23,12 @@
 </nav>
 </header>
 <form action="">
-    <input type="search" name="Productos" placeholder="Search">
+    <div class="input-group">
+        <input type="search" name="Productos" placeholder="Search...">
+        <div class="icon__holder">
+            <i class="gg-search input-group__icon"></i>
+        </div>
+    </div>
 </form>
 <br>
  
