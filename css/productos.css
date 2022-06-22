@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/assets/images/kurosakigaming.png);
+
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+.tarjeta{
+    border:solid 2px black;
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 20%;
+    background-color: pink;
+    text-align: center;
+    
+}
+.tarjeta-top{
+    font-size: 30px;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+}
+.imagen-producto{
+    display: flex;
+    width: 70%;
+    height: 50%;
+    margin-left: 15%;
+     
+
+}
+.tarjeta-cuerpo{
+    text-align: center;
+    padding: 10px;
+    background-color: palevioletred;
+    
+
+}
+.detalles{
+    list-style: none;
+   
+}
+.tarjeta-pie{
+
+}
+.boton{
+text-align: center;
+background-color: violet;
+font-size: 30px;
+margin: 12px ;
+
+}

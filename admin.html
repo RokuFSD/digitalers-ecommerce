@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="/css/stylesStock.css">
+</head>
+<body>
+<header>
+    <h1>
+        Productos
+    </h1>
+    </header>
+    <main>  
+        <form  action="admin.asp">
+            <div class="container">
+                    <div class="opciones">
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" type="text" name="nombre">
+            </div>
+                <div class="opciones">
+                <label   for="tipo">Tipo:</label>
+                <select name="marca" id="marca">
+                    <option value="">Seleccionar una Tipo</option>
+                    <option value="1000">Monitor</option> 
+                    <option value="1000">Teclado</option>
+                    <option value="1000">Mouse</option>
+                </select>
+            </div>
+            <div class="opciones">
+                <label for="marca">Marca:</label>
+            <select name="marca" id="marca">
+                <option value="">Seleccionar una Marca</option>
+                <option value="1000">Lg</option> 
+                <option value="1000">Samsung</option>
+                <option value="1000">Hp</option>
+            </select>
+
+            </div>
+            <div class="opciones">
+                <label for="importe">Importe:</label>
+                <input id="importe" type="text" name="importe">
+            </div>
+            <div class="opciones">
+                <label for="detalle">Detalle:</label>
+                <input id="detalle" type="text" name="detalle">
+            </div>
+            <div class="opciones">
+                <label for="proveedor">Proveedor:</label>
+                <input id="proveedor" type="text" name="proveedor">
+            </div>
+            <div class="opciones">
+                <label  for="imagen">Imagen:</label>
+                <input id="imagen" type="file" name="imagen">
+            </div>
+            <div>
+                
+                <input class="botons" type="button" value="Agregar">
+            </div>
+            <div>
+                
+                <input class="botons" type="button" value="Eliminar">
+            </div>
+            <div>
+                
+                <input class="botons" type="button" value="Modificar">
+                </div>
+            </div>
+        
+    
+    </form>
+</main> 
+
+
+    
+</body>
+</html>

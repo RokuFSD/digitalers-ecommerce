@@ -65,7 +65,7 @@
 }
 
 body {
-    background-image: url(../Imagenes/Background_1si.png);
+    background-image: url(/assets/images/kurosakigaming.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -120,4 +120,43 @@ input[type="search"] {
 
 input[type="search"]:focus {
     background: #FDEFFE;
+}
+
+.img-productos{
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+.clase-div{
+	padding: 10px;
+	display: flex;
+	gap: 2rem;
+
+}
+
+.clase-div label{
+	width: 10ch;
+}
+
+.boton{
+    width: 50%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin-left: 40%;
+    font-size: 16px;
+    
+    
+}
+
+.contactos{
+  background-color: white;
+    width: 100%;
+
+}
+.redes{
+    text-align: end;
+    margin-right: 10px;
+    padding: 10px;
 }

@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   
+body{
+    background-color: violet;
+    
+    
+    
+
+}
+h1{
+    color: blueviolet;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.container{
+    
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+   
+}
+.botons{
+    width: 20%;
+    background: #b300ff;
+    padding: 12px;
+    color: white;
+    margin: 10px 0;
+    margin-left: 50px;
+    font-size: 16px;
+}
+.opciones{
+        font-size: 20px;
+        padding: 10px;
+        display: flex;
+        gap: 1rem;
+        
+
+}
+
