@@ -1,39 +1,143 @@
-@import url('https://css.gg/search.css');
+/*======= Google Fonts =====*/
+/* Montserrat & Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;500;600&display=swap');
 
+/*======= Reset ======*/
 *,
-*::after,
-*::before {
+*::before,
+*::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Search icon */
-.gg-search {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs, 1));
-    width: 12px;
-    height: 12px;
-    border: 1.5px solid;
-    border-radius: 100%;
-    margin-left: -4px;
-    margin-top: -4px
+/*====== Variables =====*/
+:root {
+    --bodyFont: 'Lato', sans-serif;
+    --brandFont: 'Montserrat', sans-serif;
+
+    /*Font Weights*/
+    --fontRegular: 400;
+    --fontMedium: 500;
+    --fontSemiBold: 600;
+    --fontBold: 700;
+
+    /*Font Sizes*/
+    --logoSize: 36px;
+    --normalSize: 16px;
+
+    /*Colors*/
+    --primary: hsl(265, 57%, 68%);
 }
 
-.gg-search::after {
-    content: "";
-    display: block;
-    box-sizing: border-box;
+/*====== Global ======*/
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--bodyFont);
+    background: #000;
+}
+
+/*===== SECTIONS =====*/
+
+/*===== Header =====*/
+.header {
+    width: 100%;
+    height: 10rem;
+    padding-top: 24px;
+    padding-bottom: 12px;
+    position: relative;
+}
+
+.header__nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.nav {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 36px;
+    position: relative;
+    text-align: center;
+}
+
+.container {
     position: absolute;
-    border-radius: 3px;
-    width: 1px;
-    height: 6px;
-    background: currentColor;
-    transform: rotate(-45deg);
-    top: 8px;
-    left: 9px
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    filter: blur(5px);
+    background: url(https://cdn.discordapp.com/attachments/976583495914770472/986741871478992966/IMG_4564.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    font-family: var(--brandFont);
+    font-weight: var(--fontRegular);
+    font-size: var(--logoSize);
+    line-height: 1;
+    display: inline-block;
+    color: #fff;
+    z-index: 2;
+    letter-spacing: 10px;
+    position: relative;
+    /* Bright things in dark environments usually cast that light, giving off a glow */
+    filter: drop-shadow(0 1px 3px);
+}
+
+.logo__span {
+    display: block;
+    filter: drop-shadow(0 1px 3px);
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    gap: 52px;
+}
+
+.list__item {
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px 15px;
+    transition: all .4s ease-in;
+}
+
+.list__item:hover {
+    background: rgba(54, 49, 49, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.header__icons {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+
+.list__link {
+    text-decoration: none;
+    font-family: inherit;
+    font-size: var(--normalSize);
+    font-weight: var(--fontMedium);
+    text-transform: uppercase;
+    color: #fff;
+}
+
+img {
+    filter: invert(100%);
 }
 
 /*Input */
@@ -64,14 +168,17 @@
     transform: translate(-50%, -50%);
 }
 
+/*
 body {
     background-image: url(/assets/images/kurosakigaming.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /*height: 100vh;*/
+    /*height: 100vh;
 }
+*/
 
+/*
 header {
     display: flex;
     height: 6rem;
@@ -79,6 +186,7 @@ header {
     justify-content: space-between;
     padding: 10px;
 }
+*/
 
 h2 {
     margin: 10px;

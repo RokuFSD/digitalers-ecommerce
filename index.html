@@ -6,21 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kuruzaki Gaming</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/animations.css">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"></link>
-    
-
 </head>
 <body>
 
-<header>
-  <H1 style="font-size: 3rem;">KUROSAKI GAMING <span style="display: block;font-size: 2rem";>黒崎ゲーミング</span></H1> 
-  <nav>
+<header class="header">
+    <div class="container"></div>
+    <section class="header__nav">
+        <img src="./assets/icons/Search.svg" alt="search">
+        <nav class="nav">
+            <h2 class="logo">KUROSAKI GAMING<span class="logo__span hero glitch layers"
+                                                  data-text="黒崎ゲーミング">黒崎ゲーミング</span></h2>
+            <ul class="nav__list">
+                <li class="list__item list__item--active"><a href="" class="list__link">home</a></li>
+                <li class="list__item"><a href="" class="list__link">about us</a></li>
+                <li class="list__item"><a href="" class="list__link">products & services</a></li>
+                <li class="list__item"><a href="" class="list__link">kurocoins</a></li>
+                <li class="list__item"><a href="" class="list__link">contact</a></li>
+            </ul>
+        </nav>
+        <div class="header__icons">
+            <div class="icon">
+                <img src="./assets/icons/Vector.svg" alt="cart">
+            </div>
+            <div class="icon">
+                <img src="./assets/icons/Heart.svg" alt="favorites">
+            </div>
+            <div class="icon">
+                <img src="./assets/icons/Profile.svg" alt="profile">
+            </div>
+        </div>
+    </section>
+</header>
+</body>
+</html>
+
+
+<!-- MAIN BRANCH
+<H1 style="font-size: 3rem;">KUROSAKI GAMING <span style="display: block;font-size: 2rem" ;>黒崎ゲーミング</span></H1>
+<nav>
     <a href="#">Home</a>
     <a href="login.html">Login</a>
     <a href="#">Abouts Us</a>
     <a href="#">Products</a>
     <a href="#">Contact</a>
-    
+
 </nav>
 </header>
 <form action="">
@@ -32,85 +63,92 @@
     </div>
 </form>
 <br>
- 
+
 <main>
     <table>
-      <tr>
+        <tr>
             <th style="height: 100px;color: #f14ac8;font-size: 50px;
-             -webkit-text-stroke:2px black" colspan="3">Peripheral</th>
-            
+             -webkit-text-stroke:2px black" colspan="3">Peripheral
+            </th>
+
         </tr>
         <tr>
             <td class="img-productos" style="background-image: url(/assets/images/mouse_1.jpg); "></td>
             <td class="img-productos" style="background-image: url(/assets/images/teclado_5.jpg) ; "></td>
             <td class="img-productos" style="background-image: url(/assets/images/auris_7.jpg) ;"></td>
-    </tr>
-        
+        </tr>
+
     </table>
     <table>
         <tr>
-              <th style="height: 100px;color: #f14ac8;font-size: 50px;
-               -webkit-text-stroke:2px black" colspan="1">Gaming Chair</th>
-               <th style="height: 100px;color: #f14ac8;font-size: 50px;
-               -webkit-text-stroke:2px black" colspan="2">Kits</th>
-               
-              
-          </tr>
-          <tr>
-              <td class="img-productos" style="background-image: url(/assets/images/silla_rosa_5.jpg);"></td>
-              <td class="img-productos" style="background-image: url(/assets/images/combo\ 2.jpg);" colspan= "2"></td>
-    
-              
-             
-      </tr>
-    
-      <tr style="visibility: hidden; ">
-          <td></td>
-          <td></td>
-          <td></td>
-      </tr>
-          
-      </table>
-    
+            <th style="height: 100px;color: #f14ac8;font-size: 50px;
+               -webkit-text-stroke:2px black" colspan="1">Gaming Chair
+            </th>
+            <th style="height: 100px;color: #f14ac8;font-size: 50px;
+               -webkit-text-stroke:2px black" colspan="2">Kits
+            </th>
+
+
+        </tr>
+        <tr>
+            <td class="img-productos" style="background-image: url(/assets/images/silla_rosa_5.jpg);"></td>
+            <td class="img-productos" style="background-image: url(/assets/images/combo\ 2.jpg);" colspan="2"></td>
+
+
+        </tr>
+
+        <tr style="visibility: hidden; ">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+    </table>
+
 </main>
-
-
 
 
 </body>
 
 <footer style="position:unset; display:flex;">
-	<form style="display: flex ; flex-direction:column; " action="login.php" method="get">
-		<div class="clase-div">
-		<label for="nombre">Nombre:</label>  
-		<input id="nombre" type="text" name="nombre" placeholder="ingrese nombre" >
-	</div>
-	<div class="clase-div">
-		<label for="apellido">Apellido:</label>
-		<input id="apellido" type="text" name="apellido" placeholder="ingrese apellido">
-	</div>
-	<div class="clase-div">
-		<label for="email">Email:</label>
-		<input  id="email" type="email" name="email" placeholder="ingrese email"> 
-	</div>
+    <form style="display: flex ; flex-direction:column; " action="login.php" method="get">
+        <div class="clase-div">
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" name="nombre" placeholder="ingrese nombre">
+        </div>
+        <div class="clase-div">
+            <label for="apellido">Apellido:</label>
+            <input id="apellido" type="text" name="apellido" placeholder="ingrese apellido">
+        </div>
+        <div class="clase-div">
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="ingrese email">
+        </div>
 
-	<div class="clase-div">
-		<label for="comentario">Comentario:</label>
-		<textarea name="Comentario" id="comentario" cols="30" rows="10" placeholder="que opina de nuestra pagina"></textarea>
-	</div>
-    <input class="boton" type="button" value="Enviar" name="comentario" id="comentario">
+        <div class="clase-div">
+            <label for="comentario">Comentario:</label>
+            <textarea name="Comentario" id="comentario" cols="30" rows="10"
+                      placeholder="que opina de nuestra pagina"></textarea>
+        </div>
+        <input class="boton" type="button" value="Enviar" name="comentario" id="comentario">
+    </form>
 </footer>
 
 
 <div class="contactos">
     <div class="redes">
-        <a href="https://www.facebook.com/" target="_blank"><img src="/assets/icons/icons8-facebook (1).svg" alt="icono facebook"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="/assets/icons/icons8-facebook (1).svg"
+                                                                 alt="icono facebook"></a>
         <a href="https://twitter.com/" target="_blank"><img src="/assets/icons/icons8-twitter.svg" alt="icono twitter"></a>
-        <a href="https://www.instagram.com/" target="_blank"><img src="/assets/icons/icons8-instagram.svg" alt="icono instragram"></a>
-        <a href="mailto:kurozakigaming@gmail.com" target="_blank"><img src="/assets/icons/icons8-gmail.svg" alt="icono gmail"></a>
-        <a href="tel:+54351171293" target="_blank"><img src="/assets/icons/icons8-whatsapp (2).svg" alt="icono whatsapp"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="/assets/icons/icons8-instagram.svg"
+                                                                  alt="icono instragram"></a>
+        <a href="mailto:kurozakigaming@gmail.com" target="_blank"><img src="/assets/icons/icons8-gmail.svg"
+                                                                       alt="icono gmail"></a>
+        <a href="tel:+54351171293" target="_blank"><img src="/assets/icons/icons8-whatsapp (2).svg"
+                                                        alt="icono whatsapp"></a>
 
     </div>
 
 
 </div>
+-->
