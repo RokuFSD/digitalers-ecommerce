@@ -239,7 +239,7 @@ body {
     grid-column: 2/4;
     display: flex;
     width: 100%;
-    place-self: center;
+    place-self: start;
     flex-flow: wrap;
     gap: 1rem;
     padding: 0 2rem;
