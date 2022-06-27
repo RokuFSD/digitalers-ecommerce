@@ -19,13 +19,21 @@ export const Products = (() => {
         }
     }
 
+    function _searchProductById(productId) {
+        let toReturn = products.find((product) => product.id == productId)
+        return toReturn;
+    }
+
     function seeData() {
         console.log(products);
     }
 
-    function _searchProductById(productId) {
-        let toReturn = products.find((product) => product.id == productId)
-        return toReturn;
+    function toggleFormEditing(elementClicked) {
+        let productDom = elementClicked.parentElement.parentElement
+        let productDomId = productDom.id;
+        currentProduct = _searchProductById(productDomId)
+        ProductForm.toggleStatus();
+        fillForm(ProductForm.getForm(), currentProduct);
     }
 
     function modifyProduct(formData) {
@@ -35,14 +43,6 @@ export const Products = (() => {
         currentProduct = "";
         ProductForm.toggleStatus();
         renderAll();
-    }
-
-    function toggleFormEditing(elementClicked) {
-        let productDom = elementClicked.parentElement.parentElement
-        let productDomId = productDom.id;
-        currentProduct = _searchProductById(productDomId)
-        ProductForm.toggleStatus();
-        fillForm(ProductForm.getForm(), currentProduct);
     }
 
     function deleteProduct(elementClicked) {
@@ -59,20 +59,20 @@ export const Products = (() => {
         renderProduct(product);
     }
 
-    function renderProduct(product) {
-        let productDiv = document.createElement('div');
-        productDiv.setAttribute('class', 'product')
-        productDiv.setAttribute('id', `${product.id}`)
-        productDiv.innerHTML = createProductDom(product)
-        domSection.append(productDiv);
-    }
-
     function createProduct(formData) {
         let finalData = Object.assign({}, {
             id: Date.now().toString(),
             img: 'https://www.corsair.com/corsairmedia/sys_master/productcontent/CH-9300011-NA-M65_PRO_RGB_BLK_04.png',
         }, formData);
         addProduct(finalData)
+    }
+
+    function renderProduct(product) {
+        let productDiv = document.createElement('div');
+        productDiv.setAttribute('class', 'product')
+        productDiv.setAttribute('id', `${product.id}`)
+        productDiv.innerHTML = createProductDom(product)
+        domSection.append(productDiv);
     }
 
     function renderAll() {
