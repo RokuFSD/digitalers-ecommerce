@@ -39,6 +39,61 @@
         </div>
     </section>
 </header>
+<main>
+    <section class="productCrud">
+        <!--
+        <button id="addProduct" class="btn">
+            New Product
+        </button>
+        -->
+        <form class="form">
+            <div class="form-group">
+                <label for="productName" class="form-group__label">Nombre</label>
+                <input type="text" class="form-control" name="name"
+                       id="productName">
+            </div>
+            <div class="form-group">
+                <label for="productCategory" class="form-group__label">Categoria</label>
+                <select class="form-control" name="category" id="productCategory">
+                    <option value="peripheral" selected="true" id="productCategory-peripheral">Periferico</option>
+                    <option value="component" id="productCategory-component">Componente</option>
+                    <option value="other" id="productCategory-other">Otros...</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="productType" class="form-group__label">Tipo</label>
+                <select class="form-control" name="type" id="productType">
+                    <option value="keyboard" selected="true" id="productType-keyboard">Teclado</option>
+                    <option value="mouse" id="productType-mouse">Mouse</option>
+                    <option value="other" id="productType-other">Otros...</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="productBrand" class="form-group__label">Marca</label>
+                <select class="form-control" name="brand" id="productBrand">
+                    <option value="razer" selected="true" id="productBrand-razer">Razer</option>
+                    <option value="redragon" id="productBrand-redragon">Redragon</option>
+                    <option value="other" id="productBrand-other">Otros...</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="productPrice" class="form-group__label">Importe</label>
+                <input type="number" class="form-control" name="value" min="1"
+                       id="productPrice">
+            </div>
+            <div class="form-group">
+                <label for="productDetails" class="form-group__label">Detalle</label>
+                <textarea class="form-area" name="details"
+                          id="productDetails"></textarea>
+            </div>
+            <input class="form__submit" type="submit" value="Submit">
+        </form>
+        <section class="products">
+
+        </section>
+    </section>
+</main>
+<script type="module" src="./js/main.js"></script>
 </body>
 </html>
 
