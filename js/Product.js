@@ -3,7 +3,6 @@ import {fillForm} from "./domHelper.js";
 import {ProductForm} from "./Form.js";
 
 export const Products = (() => {
-
     let products = mockData;
     let domSection = document.querySelector('.products');
     let currentProduct = '';
@@ -24,12 +23,12 @@ export const Products = (() => {
         console.log(products);
     }
 
-    function _searchProductById(productId){
+    function _searchProductById(productId) {
         let toReturn = products.find((product) => product.id == productId)
         return toReturn;
     }
 
-    function modifyProduct(formData){
+    function modifyProduct(formData) {
         let index = products.indexOf(currentProduct);
         currentProduct = Object.assign({}, currentProduct, formData)
         products[index] = currentProduct;
@@ -51,6 +50,8 @@ export const Products = (() => {
         let productDomId = productDom.id;
         products = products.filter(product => product.id != productDomId);
         productDom.remove();
+        ProductForm.resetForm();
+        seeData();
     }
 
     function addProduct(product) {

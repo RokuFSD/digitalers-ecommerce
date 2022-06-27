@@ -5,11 +5,15 @@ export const ProductForm = (() => {
     let formData = undefined;
     let status = 'adding';
 
+    function resetForm(){
+       element.reset();
+    }
+
     function handleSubmit(evt) {
         evt.preventDefault();
         let data = new FormData(evt.target);
         formData = Object.fromEntries(data)
-        evt.target.reset();
+        resetForm()
         onFormSubmit()
     }
 
@@ -37,6 +41,7 @@ export const ProductForm = (() => {
     return {
         setUp,
         getForm,
-        toggleStatus
+        toggleStatus,
+        resetForm
     }
 })()
